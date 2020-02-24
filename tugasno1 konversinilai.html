@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NILAI</title>
+</head>
+<script language="Javascript">
+	//<!-
+	function test(){
+	var nilai=document.kirim.N1.value
+	if (nilai<=100) {
+	if (nilai>80) document.kirim.N2.value ="A"
+	else if (nilai>=71 && nilai<=80) document.kirim.N2.value ="AB"
+	else if (nilai>=66 && nilai<=70) document.kirim.N2.value ="B"
+	else if (nilai>=61 && nilai<=65) document.kirim.N2.value ="BC"
+	else if (nilai>=56 && nilai<=60) document.kirim.N2.value ="C"
+	else if (nilai>=44 && nilai<=55) document.kirim.N2.value ="D"
+	else document.kirim.N2.value="Jelek Sekali Anda";
+	}
+	else alert("Nilai yang Anda Masukkan SALAH")}
+	//<!-
+</script>
+<body>
+	<form method="POST" name="kirim">
+	<p>Nilai : <input type="text" name="N1" size="20">
+		<br> <br>
+	Nilai Abjad : <input type="text" name="N2" size="20"></p>
+	
+	<p><input type="button" name="B1" value="Cek" onclick=test()></p>
+</body>
+</html>

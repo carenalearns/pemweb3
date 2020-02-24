@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+</head>
+<style type="text/css">
+	body {background-color: #CCEEFF;}
+	h1 {font-family: calibri; outline-color: black; }
+</style>
+<script language="Javascript">
+	//<!-
+	function tambah(){
+	var bil1= parseFloat(document.kal.bl1.value);
+	var bil2= parseFloat(document.kal.bl2.value);
+	hasil = bil1+bil2;
+	document.kal.hasil.value = hasil;
+	}
+	function kurang(){
+	var bil1= parseFloat(document.kal.bl1.value);
+	var bil2= parseFloat(document.kal.bl2.value);
+	hasil = bil1-bil2;
+	document.kal.hasil.value = hasil;
+	}
+	function kali(){
+	var bil1= parseFloat(document.kal.bl1.value);
+	var bil2= parseFloat(document.kal.bl2.value);
+	hasil = bil1*bil2;
+	document.kal.hasil.value = hasil;
+	}
+	function bagi(){
+	var bil1= parseFloat(document.kal.bl1.value);
+	var bil2= parseFloat(document.kal.bl2.value);
+	hasil = bil1/bil2;
+	document.kal.hasil.value = hasil;
+	}
+	//-!>
+</script>
+<div align="center">
+<body>
+<h1>Kalkulator Sederhana</h1>
+<form name="kal">
+	<p>
+	<table align="center">
+	<tr>
+	<td align="center">Bilangan 1</td>
+	<td></td>
+	<td align="center">Bilangan 2</td>
+	</tr>
+	<tr>
+	<td> <input type="text" name="bl1" size="10"> </td>
+	<td></td>
+	<td> <input type="text" name="bl2" size="10"> </td>
+	</tr>
+	</table>
+	<br>
+	<table>
+	<tr>
+	<td align = "center" width="50"> <input type="button" value=" + " onclick="tambah()"> </td>
+	<td align = "center"  width="50"> <input type="button" value=" - " onclick="kurang()"> </td>
+	<td align = "center"  width="50"> <input type="button" value=" x " onclick="kali()"> </td>
+	<td align = "center"  width="50"> <input type="button" value=" : " onclick="bagi()"></td>
+	</tr>
+	</table>
+	<br>
+	<input type="text" name="hasil" value="" size="25" readonly="true">
+	<br>
+	<br>
+	<input type="reset" name="reset" value="CLEAR">
+	</p>
+</form>
+</div>
+</body>
+</html>
