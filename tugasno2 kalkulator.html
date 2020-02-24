@@ -12,26 +12,34 @@
 	function tambah(){
 	var bil1= parseFloat(document.kal.bl1.value);
 	var bil2= parseFloat(document.kal.bl2.value);
+	if (isNaN(bil1)==false && isNaN(bil2)==false){
 	hasil = bil1+bil2;
-	document.kal.hasil.value = hasil;
+	document.kal.hasil.value = hasil;}
+	else {alert("Ayo isi bilangan dengan BENAR!");}
 	}
 	function kurang(){
 	var bil1= parseFloat(document.kal.bl1.value);
 	var bil2= parseFloat(document.kal.bl2.value);
+	if (isNaN(bil1)==false && isNaN(bil2)==false){
 	hasil = bil1-bil2;
-	document.kal.hasil.value = hasil;
+	document.kal.hasil.value = hasil;}
+	else {alert("Ayo isi bilangan dengan BENAR!")}
 	}
 	function kali(){
 	var bil1= parseFloat(document.kal.bl1.value);
 	var bil2= parseFloat(document.kal.bl2.value);
+	if (isNaN(bil1)==false && isNaN(bil2)==false){
 	hasil = bil1*bil2;
-	document.kal.hasil.value = hasil;
+	document.kal.hasil.value = hasil;}
+	else {alert("Ayo isi bilangan dengan BENAR!")}
 	}
 	function bagi(){
 	var bil1= parseFloat(document.kal.bl1.value);
 	var bil2= parseFloat(document.kal.bl2.value);
+	if (isNaN(bil1)==false && isNaN(bil2)==false){
 	hasil = bil1/bil2;
-	document.kal.hasil.value = hasil;
+	document.kal.hasil.value = hasil;}
+	else {alert("Ayo isi bilangan dengan BENAR!")}
 	}
 	//-!>
 </script>
